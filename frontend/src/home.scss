@@ -1,0 +1,21 @@
+.wrapper {
+  max-width: 1200px;
+  margin: auto !important;
+  padding: 5vw 0;
+}
+
+.with-background {
+  background-color: #3f3d56;
+  color: #e7def4;
+}
+
+.text-column {
+  height: fit-content;
+  margin: auto;
+  padding: 15px;
+}
+@media (max-width: 768px) {
+  .text-column {
+    text-align: center;
+  }
+}

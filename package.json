@@ -1,0 +1,25 @@
+{
+  "name": "durbar",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd frontend && yarn start",
+    "server": "nodemon server.js",
+    "start": "node server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.678.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "moment": "^2.25.3",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
